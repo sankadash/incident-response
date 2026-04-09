@@ -1,0 +1,34 @@
+spec_version: 1
+name: incident_response
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+version: 0.1.0
+description: >
+  An AI agent triages production incidents in a microservice system
+  by investigating logs, metrics, and dependencies, then diagnoses
+  the root cause and takes the correct remediation action.
+  Scored deterministically on correctness, efficiency, and safety.
+author: YoungMonks
+tags:
+  - openenv
+  - sre
+  - incident-response
+  - devops
+
+tasks:
+  - id: easy
+    name: "The Obvious Crash"
+    description: "A single service crash with clear log evidence. Agent needs minimal investigation."
+    difficulty: easy
+
+  - id: medium
+    name: "The Cascading Slowdown"
+    description: "Database exhaustion causing cascading failures. Surface symptoms are misleading."
+    difficulty: medium
+
+  - id: hard
+    name: "The Intermittent Poisoned Deploy"
+    description: "A subtle bad deployment causing intermittent auth failures. The failing service appears healthy."
+    difficulty: hard

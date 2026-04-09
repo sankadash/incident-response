@@ -1,0 +1,14 @@
+[project]
+name = "openenv-hackathon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "openenv-core>=0.2.3",
+]
+
+[dependency-groups]
+dev = [
+    "huggingface-hub>=1.9.1",
+]
